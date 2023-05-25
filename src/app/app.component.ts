@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
     <a target="_blank" href="https://angular.io/start">
       Learn more about Angular 
     </a>
+    <app-mark-for-check></app-mark-for-check>
   `,
 })
 export class AppComponent {

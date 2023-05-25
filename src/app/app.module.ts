@@ -3,14 +3,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { MarkForCheckComponent } from './mark-for-check/mark-for-check.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    // RouterModule.forRoot([{ path: '', component: AppComponent }]),
+    // RouterModule.forRoot([{ path: '', component: MarkForCheckComponent }]),
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, MarkForCheckComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
