@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <h1>Hello from {{name}}!</h1>
-    <a target="_blank" href="https://angular.io/start">
-      Learn more about Angular 
-    </a>
-    <app-mark-for-check></app-mark-for-check>
-  `,
+  templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements DoCheck {
   name = 'Angular';
+
+  ngDoCheck() {
+    console.log('DoCheck called on App component');
+  }
 }
