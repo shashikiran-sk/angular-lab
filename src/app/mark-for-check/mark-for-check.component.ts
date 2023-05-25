@@ -23,11 +23,6 @@ export class MarkForCheckComponent implements OnChanges, DoCheck {
     private http: HttpClient
   ) {}
 
-  @HostListener('click')
-  onClickWithin() {
-    console.log('Clicked Within Mark For Check component');
-  }
-
   ngDoCheck() {
     console.log('DoCheck Called');
   }
@@ -37,7 +32,10 @@ export class MarkForCheckComponent implements OnChanges, DoCheck {
       this.updateAfterAWhile = 'Updated Value';
       this.changeDetector.markForCheck();
     }, 5000);
+  }
 
+  updateAfterAPI() {
+    this.updateAfterAWhile = 'Updated Value';
     this.http
       .get('https://jsonplaceholder.typicode.com/todos/1')
       .subscribe(() => {

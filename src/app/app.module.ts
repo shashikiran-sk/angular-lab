@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MarkForCheckComponent } from './mark-for-check/mark-for-check.component';
+import { OnPushInputComponent } from './on-push-input/on-push-input.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { MarkForCheckComponent } from './mark-for-check/mark-for-check.component
     HttpClientModule,
     // RouterModule.forRoot([{ path: '', component: MarkForCheckComponent }]),
   ],
-  declarations: [AppComponent, MarkForCheckComponent],
+  declarations: [AppComponent, MarkForCheckComponent, OnPushInputComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,4 +1,4 @@
-import { Component, DoCheck } from '@angular/core';
+import { Component, DoCheck, HostListener } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -10,4 +10,6 @@ export class AppComponent implements DoCheck {
   ngDoCheck() {
     console.log('DoCheck called on App component');
   }
+
+  
 }

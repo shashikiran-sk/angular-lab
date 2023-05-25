@@ -1,2 +1,5 @@
 <h3>mark-for-check</h3>
 <p>Value updated after timeout {{ updateAfterAWhile }}</p>
+<button (click)="updateAfterAPI()">Click to update value</button>
+
+<app-on-push-input [updatedValue]="updateAfterAWhile"></app-on-push-input>
